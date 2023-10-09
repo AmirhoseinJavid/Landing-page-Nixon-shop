@@ -16,10 +16,9 @@
     font-family: "iransans";
     src: url("../font/IRANSansWeb.eot");
     src: url("../font/IRANSansWeb.eot") format("eot"),
-      /* IE6–8 */ url("../font/IRANSansWeb.woff2") format("woff2"),
-      /* Chrome36+, Opera24+*/ url("../font/IRANSansWeb.woff") format("woff"),
-      /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../font/IRANSansWeb.ttf")
-        format("ttf");
+	url("../font/IRANSansWeb.woff2") format("woff2"),
+	url("../font/IRANSansWeb.woff") format("woff"),
+	url("../font/IRANSansWeb.ttf") format("ttf");
     font-weight: normal;
 }
 @font-face {
@@ -97,6 +96,9 @@ html {
 	text-decoration: none;
 	list-style-type: none;
 	-webkit-tap-highlight-color: transparent;
+}
+*{
+	font-family: 'iransans';
 }
 ::selection {
 	background-color:var(--yellow);
