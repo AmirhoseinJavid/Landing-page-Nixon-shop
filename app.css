@@ -14,20 +14,20 @@
 }	
 @font-face {
     font-family: "iransans";
-    src: url("../font/IRANSansWeb.eot");
-    src: url("../font/IRANSansWeb.eot") format("eot"),
-	url("../font/IRANSansWeb.woff2") format("woff2"),
-	url("../font/IRANSansWeb.woff") format("woff"),
-	url("../font/IRANSansWeb.ttf") format("ttf");
+    src: url("font/IRANSansWeb.eot");
+    src: url("font/IRANSansWeb.eot") format("eot"),
+	url("font/IRANSansWeb.woff2") format("woff2"),
+	url("font/IRANSansWeb.woff") format("woff"),
+	url("font/IRANSansWeb.ttf") format("ttf");
     font-weight: normal;
 }
 @font-face {
 	font-family: "archivo";
-	src: url("../font/Archivo/Archivo-Black.ttf");
+	src: url("font/Archivo/Archivo-Black.ttf");
 }
 @font-face {
 	font-family: "roboto";
-	src: url("../font/Roboto/Roboto-Medium.ttf");
+	src: url("font/Roboto/Roboto-Medium.ttf");
 }
 
 
