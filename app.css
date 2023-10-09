@@ -91,14 +91,11 @@ html {
     box-sizing: inherit;
 }
 *{
-	font-family: 'iransans';
+	font-family: 'iransans', 'roboto';
 	direction: rtl;
 	text-decoration: none;
 	list-style-type: none;
 	-webkit-tap-highlight-color: transparent;
-}
-*{
-	font-family: 'iransans';
 }
 ::selection {
 	background-color:var(--yellow);
