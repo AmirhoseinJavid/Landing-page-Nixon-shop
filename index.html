@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Nixon store</title>
+    <link rel="stylesheet" href="font/FontAwesome.Pro.6.4.2/css/all.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="videos/video-nixon.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-right">
+                    <a class="nav-logo" href="#"><img src="images/nixon.png" alt="nixon"></a>
+                    <ui class="menu">
+                        <li class="menu__item menu__item--active">
+                            <a href="#" class="menu__link">صفحه اصلی </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">ساعت مردانه</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">ساعت زنانه</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">کیف</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">کلاه</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">درباره ما</a>
+                        </li>
+                    </ui>
+                </div>
+                <div class="nav-left">
+                    <a href="#" class="nav-left__item"><svg width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></a>
+                    <a href="#" class="nav-left__item"><svg width="16" height="16" fill="currentColor" class="bi bi-bag"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg></a>
+                    <a href="#" class="nav-left__item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                        </svg></a>
+                    <div class="nav-left__login">
+                        <span class="title">ثبت نام | ورود</span>
+                        <svg class="login-icon" width="16" height="16" fill="currentColor"
+                            class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                            <path fill-rule="evenodd"
+                                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                        </svg>
+                    </div>
+                    <a href="#" class="nav-left__item user-active"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav__toggle-icon">
+                    <div class="nav__toggle-line"></div>
+                </div>
+            </nav>
+            <div class="header__title">
+                <h1>EXPLORER</h1>
+                <h2>THE CALL OF THE PEAK</h2>
+                <a href="#" class="header__title-link">هم اکنون خرید کنید </a>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <div class="nav-mobile">
+        <div class="container">
+            <input class="search__input" type="text" placeholder=" محصول مورد نظر خود را جستجو کنید">
+            <ui class="nav-mobile__list">
+                <li class="nav-mobile__item">
+                    <a href="#" class="nav-moblie__link nav-moblie__link--active">صفحه اصلی </a>
+                </li>
+                <li class="nav-mobile__item">
+                    <a href="#" class="nav-moblie__link">ساعت مردانه</a>
+                </li>
+                <li class="nav-mobile__item">
+                    <a href="#" class="nav-moblie__link">ساعت زنانه</a>
+                </li>
+                <li class="nav-mobile__item">
+                    <a href="#" class="nav-moblie__link">کیف</a>
+                </li>
+                <li class="nav-mobile__item">
+                    <a href="#" class="nav-moblie__link">کلاه</a>
+                </li>
+                <li class="nav-mobile__item">
+                    <a href="#" class="nav-moblie__link">درباره ما</a>
+                </li>
+            </ui>
+        </div>
+    </div>
+    <main class="main">
+        <div class="container">
+            <div class="main__title">
+                <h3>محصولات نیکسون</h3>
+            </div>
+            <section class="products">
+                <div class="products-item">
+                    <a href="#" class="products-item__link">
+                      <img src="images/image3.jpg" alt="watch" class="products-item__image" />
+                      <div class="middle-box">
+                        <h4>ساعت</h4>
+                        <h5>ساعتی شیک برای همه</h5>
+                      </div>
+                    </a>
+                </div>
+                <div class="products-item">
+                    <a href="#" class="products-item__link">
+                      <img src="images/image1.jpg" alt="watch" class="products-item__image" />
+                      <div class="middle-box">
+                        <h4>کیف</h4>
+                        <h5>کیفی سبک برای همه</h5>
+                      </div>
+                    </a>
+                </div>
+                <div class="products-item">
+                    <a href="#" class="products-item__link">
+                      <img src="images/image2.jpg" alt="watch" class="products-item__image" />
+                      <div class="middle-box">
+                        <h4>کلاه</h4>
+                        <h5>بهترین را بر سر بگذارید</h5>
+                      </div>
+                    </a>
+                </div>
+            </section>
+            <div class="main__title">
+                <h3>دسته بندی محصولات</h3>
+            </div>
+            <div class="product-list">
+                <ul class="profuct-list__item">
+                    <a href="" class="product-list__link avtive-item"><li>همه</li></a>
+                    <a href="" class="product-list__link"><li>ساعت</li></a>
+                    <a href="" class="product-list__link"><li>کلاه</li></a>
+                    <a href="" class="product-list__link"><li>کیف</li></a>
+                </ul>
+            </div>
+            <section class="row">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product-cart">
+                        <div class="imgbox">
+                            <img class="imgbox__image" src="images/product/01-1.jpg" alt="watch">
+                            <div class="imgbox__container">
+                                <div class="imgbox__badge-offer">
+                                <span>۳۳٪</span>
+                                </div>
+                                <ul class="action">
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-heart"></i>
+                                        </a>
+                                        <span class="action__item-name" >اضافه کردن به علاقمندی ها</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-eye"></i>
+                                        </a>
+                                        <span class="action__item-name">انواع رنگ محصول</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-palette"></i>
+                                        </a>
+                                        <span class="action__item-name">نمای محصول</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="product-content">
+                            <a href="">
+                                <span class="product-content__type">ساعت مردانه</span>
+                            </a>
+                            <div class="rating">
+                                <i class="fa fa-star rating__item gray" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="product-content__name">Sentry Stainless Steel</h3>
+                            <div class="product-content__price">
+                                <p>۲٬۵۰۰٬۰۰۰ تومان</p>
+                                <span>۲٬۰۰۰٬۰۰۰ تومان</span>
+                            </div>
+                            <div class="product-content__btn">
+                                <a href="#" class="btn-normal">افرودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product-cart">
+                        <div class="imgbox">
+                            <img class="imgbox__image" src="images/product/02-1.jpg" alt="watch">
+                            <div class="imgbox__container">
+                                <div class="imgbox__badge-offer">
+                                <span>۲۰٪</span>
+                                </div>
+                                <ul class="action">
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-heart"></i>
+                                        </a>
+                                        <span class="action__item-name" >اضافه کردن به علاقمندی ها</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-eye"></i>
+                                        </a>
+                                        <span class="action__item-name">انواع رنگ محصول</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-palette"></i>
+                                        </a>
+                                        <span class="action__item-name">نمای محصول</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="product-content">
+                            <a href="">
+                                <span class="product-content__type">کیف</span>
+                            </a>
+                            <div class="rating">
+                                <i class="fa fa-star rating__item gray" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item gray" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="product-content__name">Stash Bag</h3>
+                            <div class="product-content__price">
+                                <p>۱٬۴۰۰٬۰۰۰ تومان</p>
+                                <span>۱٬۰۰۰٬۰۰۰ تومان</span>
+                            </div>
+                            <div class="product-content__btn">
+                                <a href="#" class="btn-normal">افرودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>  
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product-cart">
+                        <div class="imgbox">
+                            <img class="imgbox__image" src="images/product/03-4.jpg" alt="watch">
+                            <div class="imgbox__container">
+                                <div class="imgbox__badge-offer">
+                                <span>۲۵٪</span>
+                                </div>
+                                <ul class="action">
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-heart"></i>
+                                        </a>
+                                        <span class="action__item-name" >اضافه کردن به علاقمندی ها</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-eye"></i>
+                                        </a>
+                                        <span class="action__item-name">انواع رنگ محصول</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-palette"></i>
+                                        </a>
+                                        <span class="action__item-name">نمای محصول</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="product-content">
+                            <a href="">
+                                <span class="product-content__type">کلاه</span>
+                            </a>
+                            <div class="rating">
+                                <i class="fa fa-star rating__item gray" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="product-content__name">Long Trip Strapback</h3>
+                            <div class="product-content__price">
+                                <p>۱٬۲۰۰٬۰۰۰ تومان</p>
+                                <span>۸۰۰٬۰۰۰ تومان</span>
+                            </div>
+                            <div class="product-content__btn">
+                                <a href="#" class="btn-normal">افرودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product-cart">
+                        <div class="imgbox">
+                            <img class="imgbox__image" src="images/product/04-1.jpg" alt="watch">
+                            <div class="imgbox__container">
+                                <div class="imgbox__badge-offer badge-new ">
+                                <span>جدید</span>
+                                </div>
+                                <ul class="action">
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-heart"></i>
+                                        </a>
+                                        <span class="action__item-name" >اضافه کردن به علاقمندی ها</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-eye"></i>
+                                        </a>
+                                        <span class="action__item-name">انواع رنگ محصول</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-palette"></i>
+                                        </a>
+                                        <span class="action__item-name">نمای محصول</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="product-content">
+                            <a href="">
+                                <span class="product-content__type">ساعت مردانه</span>
+                            </a>
+                            <div class="rating">
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="product-content__name">Sentry Chrono</h3>
+                            <div class="product-content__price">
+                                <p>۴٬۰۰۰٬۰۰۰ تومان</p>
+                                <span>۳٬۵۰۰٬۰۰۰ تومان</span>
+                            </div>
+                            <div class="product-content__btn">
+                                <a href="#" class="btn-normal">افرودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product-cart">
+                        <div class="imgbox">
+                            <img class="imgbox__image" src="images/product/01-2.jpg" alt="watch">
+                            <div class="imgbox__container">
+                                <div class="imgbox__badge-offer">
+                                <span>۱۰٪</span>
+                                </div>
+                                <ul class="action">
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-heart"></i>
+                                        </a>
+                                        <span class="action__item-name" >اضافه کردن به علاقمندی ها</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-eye"></i>
+                                        </a>
+                                        <span class="action__item-name">انواع رنگ محصول</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-palette"></i>
+                                        </a>
+                                        <span class="action__item-name">نمای محصول</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="product-content">
+                            <a href="">
+                                <span class="product-content__type">ساعت زنانه</span>
+                            </a>
+                            <div class="rating">
+                                <i class="fa fa-star rating__item gray" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="product-content__name">Porter Watch</h3>
+                            <div class="product-content__price">
+                                <p>۱٬۷۵۰٬۰۰۰ تومان</p>
+                                <span>۱٬۵۰۰٬۰۰۰ تومان</span>
+                            </div>
+                            <div class="product-content__btn">
+                                <a href="#" class="btn-normal">افرودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product-cart">
+                        <div class="imgbox">
+                            <img class="imgbox__image" src="images/product/02-2.jpg" alt="watch">
+                            <div class="imgbox__container">
+                                <div class="imgbox__badge-offer">
+                                <span>۳٪</span>
+                                </div>
+                                <ul class="action">
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-heart"></i>
+                                        </a>
+                                        <span class="action__item-name" >اضافه کردن به علاقمندی ها</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-eye"></i>
+                                        </a>
+                                        <span class="action__item-name">انواع رنگ محصول</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-palette"></i>
+                                        </a>
+                                        <span class="action__item-name">نمای محصول</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="product-content">
+                            <a href="">
+                                <span class="product-content__type">کیف</span>
+                            </a>
+                            <div class="rating">
+                                <i class="fa fa-star rating__item gray" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item gray" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item gray" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="product-content__name">Mode Pack</h3>
+                            <div class="product-content__price">
+                                <p>۱٬۶۰۰٬۰۰۰ تومان</p>
+                                <span>۱٬۲۰۰٬۰۰۰ تومان</span>
+                            </div>
+                            <div class="product-content__btn">
+                                <a href="#" class="btn-normal">افرودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product-cart">
+                        <div class="imgbox">
+                            <img class="imgbox__image" src="images/product/03-2.jpg" alt="watch">
+                            <div class="imgbox__container">
+                                <div class="imgbox__badge-offer">
+                                <span>۱۶٪</span>
+                                </div>
+                                <ul class="action">
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-heart"></i>
+                                        </a>
+                                        <span class="action__item-name" >اضافه کردن به علاقمندی ها</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-eye"></i>
+                                        </a>
+                                        <span class="action__item-name">انواع رنگ محصول</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-palette"></i>
+                                        </a>
+                                        <span class="action__item-name">نمای محصول</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="product-content">
+                            <a href="">
+                                <span class="product-content__type">کلاه</span>
+                            </a>
+                            <div class="rating">
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="product-content__name">Deep Down FF Athletic Fit Hat</h3>
+                            <div class="product-content__price">
+                                <p>۳٬۷۰۰٬۰۰۰ تومان</p>
+                                <span>۳٬۰۰۰٬۰۰۰ تومان</span>
+                            </div>
+                            <div class="product-content__btn">
+                                <a href="#" class="btn-normal">افرودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product-cart">
+                        <div class="imgbox">
+                            <img class="imgbox__image" src="images/product/04-2.jpg" alt="watch">
+                            <div class="imgbox__container">
+                                <div class="imgbox__badge-offer" style="opacity: 0;">
+                                <span>۳۷٪</span>
+                                </div>
+                                <ul class="action">
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-heart"></i>
+                                        </a>
+                                        <span class="action__item-name" >اضافه کردن به علاقمندی ها</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-eye"></i>
+                                        </a>
+                                        <span class="action__item-name">انواع رنگ محصول</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-palette"></i>
+                                        </a>
+                                        <span class="action__item-name">نمای محصول</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="product-content">
+                            <a href="">
+                                <span class="product-content__type">ساعت مردانه</span>
+                            </a>
+                            <div class="rating">
+                                <i class="fa fa-star rating__item gray" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="product-content__name">Patrol Leather</h3>
+                            <div class="product-content__price">
+                                <p></p>
+                                <span>۲٬۰۰۰٬۰۰۰ تومان</span>
+                            </div>
+                            <div class="product-content__btn">
+                                <a href="#" class="btn-normal">افرودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product-cart">
+                        <div class="imgbox">
+                            <img class="imgbox__image" src="images/product/01-3.jpg" alt="watch">
+                            <div class="imgbox__container">
+                                <div class="imgbox__badge-offer badge-new">
+                                <span>جدید</span>
+                                </div>
+                                <ul class="action">
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-heart"></i>
+                                        </a>
+                                        <span class="action__item-name" >اضافه کردن به علاقمندی ها</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-eye"></i>
+                                        </a>
+                                        <span class="action__item-name">انواع رنگ محصول</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-palette"></i>
+                                        </a>
+                                        <span class="action__item-name">نمای محصول</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="product-content">
+                            <a href="">
+                                <span class="product-content__type">ساعت زنانه</span>
+                            </a>
+                            <div class="rating">
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="product-content__name">Kensington Leather</h3>
+                            <div class="product-content__price">
+                                <p>۶٬۰۰۰٬۰۰۰ تومان</p>
+                                <span>۵٬۰۰۰٬۰۰۰ تومان</span>
+                            </div>
+                            <div class="product-content__btn">
+                                <a href="#" class="btn-normal">افرودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product-cart">
+                        <div class="imgbox">
+                            <img class="imgbox__image" src="images/product/02-4.jpg" alt="watch">
+                            <div class="imgbox__container">
+                                <div class="imgbox__badge-offer">
+                                <span>۹٪</span>
+                                </div>
+                                <ul class="action">
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-heart"></i>
+                                        </a>
+                                        <span class="action__item-name" >اضافه کردن به علاقمندی ها</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-eye"></i>
+                                        </a>
+                                        <span class="action__item-name">انواع رنگ محصول</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-palette"></i>
+                                        </a>
+                                        <span class="action__item-name">نمای محصول</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="product-content">
+                            <a href="">
+                                <span class="product-content__type">کیف</span>
+                            </a>
+                            <div class="rating">
+                                <i class="fa fa-star rating__item gray" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="product-content__name">Cutback Hip Pack</h3>
+                            <div class="product-content__price">
+                                <p>۹۰۰٬۰۰۰ تومان</p>
+                                <span>۶۰۰٬۰۰۰ تومان</span>
+                            </div>
+                            <div class="product-content__btn">
+                                <a href="#" class="btn-normal">افرودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product-cart">
+                        <div class="imgbox">
+                            <img class="imgbox__image" src="images/product/04-4.jpg" alt="watch">
+                            <div class="imgbox__container">
+                                <div class="imgbox__badge-offer badge-new">
+                                <span>جدید</span>
+                                </div>
+                                <ul class="action">
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-heart"></i>
+                                        </a>
+                                        <span class="action__item-name" >اضافه کردن به علاقمندی ها</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-eye"></i>
+                                        </a>
+                                        <span class="action__item-name">انواع رنگ محصول</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-palette"></i>
+                                        </a>
+                                        <span class="action__item-name">نمای محصول</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="product-content">
+                            <a href="">
+                                <span class="product-content__type">کلاه</span>
+                            </a>
+                            <div class="rating">
+                                <i class="fa fa-star rating__item gray" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="product-content__name"> Athletic Fit Hat</h3>
+                            <div class="product-content__price">
+                                <p>۴٬۵۶۰٬۰۰۰ تومان</p>
+                                <span>۴٬۰۰۰٬۰۰۰ تومان</span>
+                            </div>
+                            <div class="product-content__btn">
+                                <a href="#" class="btn-normal">افرودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="product-cart">
+                        <div class="imgbox">
+                            <img class="imgbox__image" src="images/product/03-3.jpg" alt="watch">
+                            <div class="imgbox__container">
+                                <div class="imgbox__badge-offer">
+                                <span>۳۳٪</span>
+                                </div>
+                                <ul class="action">
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-heart"></i>
+                                        </a>
+                                        <span class="action__item-name" >اضافه کردن به علاقمندی ها</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-eye"></i>
+                                        </a>
+                                        <span class="action__item-name">انواع رنگ محصول</span>
+                                    </li>
+                                    <li class="action__item">
+                                        <a href="#" class="action__item-icon">
+                                            <i class="fa-light fa-palette"></i>
+                                        </a>
+                                        <span class="action__item-name">نمای محصول</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                        </div>
+                        <div class="product-content">
+                            <a href="">
+                                <span class="product-content__type">کلاه</span>
+                            </a>
+                            <div class="rating">
+                                <i class="fa fa-star rating__item gray" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                                <i class="fa fa-star rating__item" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="product-content__name">Sentry Steel</h3>
+                            <div class="product-content__price">
+                                <p>۳٬۷۰۰٬۰۰۰ تومان</p>
+                                <span>۳٬۰۰۰٬۰۰۰ تومان</span>
+                            </div>
+                            <div class="product-content__btn">
+                                <a href="#" class="btn-normal">افرودن به سبد خرید</a>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            <div class="product-pagination">
+                <ul class="product-pagination__list">
+                    <a href="#">
+                        <li class="product-pagination__item  active-leftright">
+                            <i class="fa-light fa-angles-right"></i>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="product-pagination__item">5</li>
+                    </a>
+                    <a href="#">   
+                        <li class="product-pagination__item">4</li>
+                    </a> 
+                    <a href="#">   
+                        <li class="product-pagination__item">3</li>
+                    </a> 
+                    <a href="#">   
+                        <li class="product-pagination__item">2</li>
+                    </a> 
+                    <a href="#">    
+                        <li class="product-pagination__item pagination-active">1</li>
+                    </a>
+                    <a href="#">   
+                        <li class="product-pagination__item active-leftright">
+                            <i class="fa-light fa-angles-left"></i>
+                        </li>
+                    </a>     
+                </ul>
+            </div>
+        </div>
+        <div class="review-container">
+            <div class="container">
+                <div class="product-review">
+                    <div class="product-review__content">
+                        <div class="product-review__content-on">
+                            <a href="#"><img src="images/nixon.png" alt="nixon"></a>
+                            <h3>نیکسون از سال 1989</h3>
+                            <h4>نیکسون بهترین برند لوازم جانبی سبک زندگی برای افراد مستقل، خلاق و آزاداندیش در سراسر جهان بوده است.</h4>
+                            <h5>برند نیکسون در کالیفرنیا به عنوان یک خط بوتیک ساعت به طور انحصاری در خرده فروشی های ورزشی و مد فروخته می شد، اکنون مجموعه کاملی از ساعت ها، کیف ها، کالاهای چرمی و لوازم جانبی است.</h5>
+                        </div>    
+                    </div>
+                    <div class="product-review-row1">
+                        <img class="product-review-row1__image" src="images/81b7872a26232a15336d.webp" alt="nixon">
+                        <div class="product-review-row1__content">
+                            <li>تیم طراحی شده، <span> سفارشی</span>  ساخته شده است</li>
+                            <h4>شعار ما از ابتدا این بود که از استعداد تیم مان برای زنده کردن چشم انداز مان استفاده کنیم. ما با گروه متنوعی از ورزشکاران، موسیقی‌ دانان، سازندگان، هنرمندان و فعالانی کار کرده‌ایم.</h4>
+                            <h5>این گروه انتخابی به ما کمک می کند تا توابع جدید را شناسایی کنیم و اشیایی را ایجاد کنیم که دارای سبک هستند.</h5>
+                        </div>
+                    </div>
+                    <div class="product-review-row2">
+                        <img class="product-review-row2__image" src="images/4.webp" alt="nixon">
+                        <div class="product-review-row2__content">
+                            <li>نیکسون آماده برای جنگ با  <span> مقاومت و سختی </span></li>
+                            <h4>ساعت های نیکسون یکی از مقاوم ترین ساعت ها در جهان هستند که با توجه به متریال بکار رفته در آن ها  این مقاومت  را جندین برابر می کند.</h4>
+                            <h5>این گروه انتخابی به ما کمک می کند تا توابع جدید را شناسایی کنیم و اشیایی را ایجاد کنیم که دارای سبک هستند.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="container">
+              <div class="hero-img">
+                <img src="images/back-to-grind-t1-mock-Desktop_1920x.progressive.jpg" alt="" />
+              </div>
+              <div class="hero-details">
+                <h4>بهترین تابستان را برای خودتان بسازید </h4>
+                <p>آسوده خرید کنید</p>
+                <a href="#" class="btn-normal">شروع خرید</a>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="off-code">
+                <h3> 20% درصد <span>تخفیف</span> برای همه محصولات  ، این را از دست ندهید ! استفاده از کد : </h3>
+                <a href="#">Hongo2023</a>
+            </div>
+            <div class="instagram-photo">
+                <div class="instagram-photo-top">
+                    <div class="instagram-photo-top__content">
+                        <h2>Nixon@  را دنبال کنید </h2>
+                        <p>در عکس های اینستاگرام خود Nixon@ را تگ کنید.</p>
+                    </div>
+                    <a href="#" class="instagram-photo-top__logo">
+                        <span>Inistagram</span>
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="instagram-photo-imgbox">
+                    <a href="#" class="instagram-photo-imgbox__image">
+                        <img src="images/instagram/01.jpg" alt="">
+                        <span class="instagram-photo-imgbox__icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="instagram-photo-imgbox__image">
+                        <img src="images/instagram/02.jpg" alt="">
+                        <span class="instagram-photo-imgbox__icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="instagram-photo-imgbox__image">
+                        <img src="images/instagram/03.jpg" alt="">
+                        <span class="instagram-photo-imgbox__icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="instagram-photo-imgbox__image">
+                        <img src="images/instagram/04.jpg" alt="">
+                        <span class="instagram-photo-imgbox__icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="instagram-photo-imgbox__image">
+                        <img src="images/instagram/05.jpg" alt="">
+                        <span class="instagram-photo-imgbox__icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="instagram-photo-imgbox__image col-xl-2">
+                        <img src="images/instagram/06.jpg" alt="">
+                        <span class="instagram-photo-imgbox__icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="email-container">
+            <div class="container">
+                <div class="email-box">
+                    <div class="email-box__content">
+                        <h3>به ما بپیوندید و <span>20% تخفیف </span> بگیرید</h3>
+                        <p>با عضویت در خبرنامه از ما 20%  تخفیف بگیرید.</p>
+                    </div>
+                    <div class="email-box__input">
+                        <input type="text" name="email" placeholder="Enter your email...">
+                        <button type="submit">
+                            عضویت
+                            <i class="fa-light fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="container">
+                <div class="footer-list">
+                    <div class="footer-list__col">
+                        <h3 class="footer-title"> ارتباط با ما</h3>
+                        <ul class="footer-list__item" >
+                            <li class="footer-list__link">
+                              <p><span>ایمیل</span> : Nixonshop@gmail.com</p>
+                            </li>
+                            <li class="footer-list__link">
+                              <p><span>تلفن</span> : ۰۹۱۴۸۶۳۰۷۱۸</p>
+                            </li>
+                            <li class="footer-list__link">
+                              <p><span>ساعت کاری</span> : شنبه تا چهارشنبه، ۰۸:۰۰ الی ۱۸:۰۰</p>
+                            </li>
+                        </ul>
+                        <h3 class="footer-title-icon">ما را دنبال کنید :</h3>
+                        <ul class="footer-social-icon">
+                            <li class="footer-social-icon__item">
+                                <a href="#">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-icon__item">
+                                <a href="#">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-icon__item">
+                                <a href="#">
+                                    <i class="fa-brands fa-threads"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-icon__item">
+                                <a href="#">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-icon__item">
+                                <a href="#">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-icon__item">
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-list__col">
+                        <h3 class="footer-title"> دسته بندی ها</h3>
+                        <ul class="list">
+                            <a class="list__item" href="#">
+                                <li>ساعت مردانه</li>
+                            </a>
+                            <a class="list__item" href="#">
+                                <li>ساعت زنانه</li>
+                            </a>
+                            <a class="list__item" href="#">
+                                <li>کیف</li>
+                            </a>
+                            <a class="list__item" href="#">
+                                <li>کلاه</li>
+                            </a>
+                            <a class="list__item" href="#">
+                                <li>لباس</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="footer-list__col">
+                        <h3 class="footer-title">جزئیات حساب کاربری</h3>
+                        <ul class="list">
+                            <a href="#" class="list__item">
+                                <li>حساب کاربری من</li>
+                            </a>
+                            <a href="#" class="list__item">
+                                <li>مشاهده سبد خرید</li>
+                            </a>
+                            <a href="#" class="list__item">
+                                <li>لیست علاقه مندی ها</li>
+                            </a>
+                            <a href="#" class="list__item">
+                                <li>وضعیت سفارش</li>
+                            </a>
+                            <a href="#" class="list__item">
+                                <li>تاریخچه  سفارشات </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="footer-list__pay">
+                        <h3 class="footer-title">پرداخت امن</h3>
+                        <div class="footer-pay">
+                            <a class="footer-pay__item" href="#">
+                                <i class="fa-brands fa-cc-paypal"></i>
+                            </a>
+                            <a class="footer-pay__item" href="#">
+                                <i class="fa-brands fa-google-pay"></i>
+                            </a>
+                            <a class="footer-pay__item" href="#">
+                                <i class="fa-brands fa-apple-pay"></i>
+                            </a>
+                            <a class="footer-pay__item" href="#">
+                                <i class="fa-brands fa-amazon-pay"></i>
+                            </a>
+                        </div>
+                        <div class="footer-pay-namad">
+                            <a class="footer-pay-namad__item" href="#">
+                                <img src="images/icon/zarin-pal2.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

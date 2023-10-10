@@ -1,0 +1,213 @@
+.container {
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+  
+@media (max-width: 430px) {
+    .main__title::before,
+    .main__title::after{
+        width: 4rem;
+    }
+    .main__title{
+        font-size: 1.5rem;
+    }
+    .product-list__link{
+        font-size: 1.4rem;
+    }
+    .header__title h1{
+        font-size: 2.8rem;
+    }
+    .header__title h2{
+        font-size: 2.3rem;
+    }
+    .header__title-link{
+        font-size: 1.5rem;
+    }
+    .product-review-row2__image ,
+    .product-review-row1__image{
+        max-width: 25rem;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+@media (max-width: 576px) {
+    .nav-left {
+        display: none;
+    }
+    .nav__toggle-icon{
+        display: flex;
+    }
+    .product-pagination__item{
+        font-size: 1.3rem;
+        padding: .8rem 1.1rem;
+    }
+    .product-pagination__list{
+        gap: .5rem;
+    }
+    .instagram-photo-top{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* md */
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+    .nav-mobile{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+    .products{
+        flex-wrap: wrap;
+    }
+    .product-review-row1{
+        flex-direction: column;
+        transform: none;
+        padding: 3rem;
+    }
+    .product-review-row1__content li{
+        font-size: 2.5rem;
+    }
+    .product-review-row1__content h4{
+        font-size: 1.5rem;
+    }
+    .product-review-row1__content h5{
+        font-size: 1.5rem;
+    }
+    .product-review-row2{
+        flex-direction: column;
+        transform: none;
+        padding: 3rem;
+    }
+    .product-review-row2__content li{
+        font-size: 2.5rem;
+    }
+    .product-review-row2__content h4{
+        font-size: 1.5rem;
+    }
+    .product-review-row2__content h5{
+        font-size: 1.5rem;
+    }
+    .email-box{
+        flex-direction: column;
+    }
+    .email-box__content h3{
+        font-size: 1.2rem;
+    }
+    .email-box__content p{
+        font-size: 1rem;
+    }
+}
+
+
+/* lg */
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+@media (max-width: 992px) {
+    .user-active{
+        display: inline;
+    }
+    .nav-left__login{
+        display: none;
+    }
+    .menu__link{
+        font-size: 1.3rem;
+    }
+    .menu{
+        margin-right: .5rem;
+        gap: 1rem;
+    }
+    .hero-details{
+        padding: 3rem;
+    }
+    .hero-details h4{
+        font-size: 1.7rem;
+    }
+    .hero-details p{
+        font-size: 1.5rem;
+    }
+    .hero-details a {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+    .off-code{
+        flex-direction: column;
+    }
+    .off-code h3{
+        font-size: 1.2rem;
+    }
+    .off-code a{
+        font-size: 1rem;
+        padding: 1.1rem 1.5rem;
+    }
+    .instagram-photo-top__content h2{
+        font-size: 1.4rem;
+        margin-left: .5rem;
+        line-height: 2.5rem;
+    }
+    .instagram-photo-top__content p{
+        font-size: 1.2rem;
+        margin-right: .5rem;
+        line-height: 2.5rem;
+    }
+    .footer-section{
+        background-position: center;
+    }
+
+}
+
+
+/* xl */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+@media (max-width: 1200px) {
+
+}
+
+
+
+/* xxl */
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1370px;
+    }
+
+}
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
