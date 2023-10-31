@@ -31,6 +31,13 @@
     .product-review-row1__image{
         max-width: 25rem;
     }
+    .instagram-photo-top__content{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .instagram-photo-top__content p{
+        border-right: none;
+    }
 }
 @media (min-width: 576px) {
     .container {
@@ -106,10 +113,15 @@
         flex-direction: column;
     }
     .email-box__content h3{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+    }
+    .email-box__content{
+        flex-direction: column;
     }
     .email-box__content p{
-        font-size: 1rem;
+        font-size: 1.2rem;
+        border-right: none;
+        padding-right: 0;
     }
 }
 
